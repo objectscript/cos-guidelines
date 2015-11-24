@@ -5,11 +5,11 @@ There is required and optional parts. _Optional part to be added later_
 2. No short name for statements keywords allowed - use fully expanded, lower case keyword names
  
 ```
-if (expression) {
-   do ##class(Sample).%New(initexpresion)
+ if (expression) {
+  do ##class(Sample).%New(initexpresion)
    for i=1:1:10 {
-     write something,!
-    }
+    write something,!
   }
+ }
 ```
 
