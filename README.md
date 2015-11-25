@@ -31,3 +31,9 @@ or
  }
 
 ```
+
+2. For readablity please insert spaces after comma in argument list, i.e.
+```
+Write 1, 2, 3
+Do ..Method(Arg1, Arg2, Arg3)
+```
