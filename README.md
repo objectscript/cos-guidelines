@@ -37,3 +37,10 @@ or
 Write 1, 2, 3
 Do ..Method(Arg1, Arg2, Arg3)
 ```
+4. We recommend to use `#dim` statement for declaration of local variables types, e.g.
+```
+ #dim array as %ArrayOfDataTypes = ##class(%ArrayOfDataTypes).%New()
+ do array.SetAt(id, "id")
+ #dim status As %Status = $$$OK
+```
+This will help editor to provide better auto-complete, and eventually will be used by static checker for type informantion extraction.
