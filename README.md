@@ -31,8 +31,8 @@ or
  }
 
 ```
-
-2. For readablity please insert spaces after comma in argument list, i.e.
+2. Use the reasonable name convention which is consistent across hierarchy. We recommend to use CamelCase for classes, methods and properties (e.g. `Sample.Person`, `OpenFile`, `LastIndex`, etc.), but smallCamelCase for local variables (e.g. `startDate`, `endDate`), but please be consistent and use local schea if it's different thancurrent recommendation.
+3. For better readablity please insert spaces after comma in argument list, i.e.
 ```
 Write 1, 2, 3
 Do ..Method(Arg1, Arg2, Arg3)
