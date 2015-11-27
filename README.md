@@ -8,39 +8,39 @@ but will produce inconsistent results.
 
 ## Mandatory part
 
-1. Only "modern" syntax permitted, dotted syntax is not generally allowed (with few exceptions)
-2. No short name for statements keywords allowed - use fully expanded keyword names. This same rule applie to builtin function names - they should be fully pronounced.
+* Only "modern" syntax permitted, dotted syntax is not generally allowed (with few exceptions)
+* No short name for statements keywords allowed - use fully expanded keyword names. This same rule applie to builtin function names - they should be fully pronounced.
  
 ## Recommended part
-1. We recommend to use fully expanded keyword in lower case or capitalized. Whatever you'll select should be consistent across class or utility, i.e.
+* We recommend to use fully expanded keyword in lower case or capitalized. Whatever you'll select should be consistent across class or utility, i.e.
 ```
 If (expression) {
   Do ##class(Sample).%New(initexpresion)
-   For i=1:1:10 {
+  For i=1:1:10 {
     Write something, $Zversion, !
   }
- }
+}
 ```
-or
-```
- if (expression) {
-  do ##class(Sample).%New(initexpresion)
-   for i=1:1:10 {
-    write something, $zversion, !
-  }
- }
+  or
 
 ```
-2. Use the reasonable name convention which is consistent across hierarchy. We recommend to use CamelCase for classes, methods and properties (e.g. `Sample.Person`, `OpenFile`, `LastIndex`, etc.), but smallCamelCase for local variables (e.g. `startDate`, `endDate`), but please be consistent and use local schea if it's different thancurrent recommendation.
-3. For better readablity please insert spaces after comma in argument list, i.e.
+ if (expression) {
+   do ##class(Sample).%New(initexpresion)
+   for i=1:1:10 {
+     write something, $zversion, !
+   }
+ }
 ```
-Write 1, 2, 3
-Do ..Method(Arg1, Arg2, Arg3)
+* Use the reasonable name convention which is consistent across hierarchy. We recommend to use CamelCase for classes, methods and properties (e.g. `Sample.Person`, `OpenFile`, `LastIndex`, etc.), but smallCamelCase for local variables (e.g. `startDate`, `endDate`), but please be consistent and use local schea if it's different thancurrent recommendation.
+* For better readablity please insert spaces after comma in argument list, i.e.
 ```
-4. We recommend to use `#dim` statement for declaration of local variables types, e.g.
+  Write 1, 2, 3
+  Do ..Method(Arg1, Arg2, Arg3)
 ```
- #dim array as %ArrayOfDataTypes = ##class(%ArrayOfDataTypes).%New()
- do array.SetAt(id, "id")
- #dim status As %Status = $$$OK
+* We recommend to use `#dim` statement for declaration of local variables types, e.g.
 ```
-This will help editor to provide better auto-complete, and eventually will be used by static checker for type informantion extraction.
+  #dim array as %ArrayOfDataTypes = ##class(%ArrayOfDataTypes).%New()
+  do array.SetAt(id, "id")
+  #dim status As %Status = $$$OK
+```
+ This will help editor to provide better auto-complete, and eventually will be used by static checker for type informantion extraction.
