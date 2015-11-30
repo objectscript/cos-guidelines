@@ -40,10 +40,21 @@ If (expression) {
   #dim status As %Status = $$$OK
 ```
  This will help editor to provide better auto-complete, and eventually will be used by static checker for type informantion extraction.
+* Please indent blocks reasonably. We recommend to use 8, 4 or 2 spaces indentations. Pick your level, and apply consistently.
+```
+    if (expression) {
+        do ..Method(args...)
+        set i = j + 1
+    } else {
+        while (condition) {
+            write arg1, arg2, !
+        }
+    }
+```
 * For better readablity please insert spaces after comma in argument list, i.e.
 ```
   Write 1, 2, 3
-  Do ..Method(Arg1, Arg2, Arg3)
+  Do ..Method(arg1, arg2, argN)
 ```
 * For better readability please insert spaces around assignment. You may align several neighbour assignments according to your tastes, i.e.
 ```
