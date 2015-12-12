@@ -1,7 +1,7 @@
 # cos-guidelines
 This is the first approximation of COS guidelines we use for github.com/intersystems-ru projects. There are mandatory and recommended parts.
 
-We do not plan to be too much restrictive, but rather flexible enough to allow many reasonable styles. 
+We do not plan to be very restrictive, but want be rather flexible enough and allow any *reasonable* style.
 Here is the general advice: use common sense and try to *be consistent* wherever you write code. 
 If there is some style already established in the class or utility being modified then we recommend
 to continue use that same style, than introducing yet another one, which may be more recommended 
@@ -9,8 +9,9 @@ but which will be introducing some unnecessary inconsistency.
 
 ## Mandatory part
 
-* Only "modern" syntax permitted, dotted syntax is not generally allowed (with few exceptions)
-* No short name for statements keywords or built-in functions allowed - use fully expanded names.
+* Only "modern" syntax permitted, dotted syntax is not generally allowed (with few exceptions);
+* No short name for statements keywords or built-in functions allowed - use fully expanded names;
+* Comment your code appropriately, use English in comments to make your code easy to understand by your international collegues. Same English-based rule applies to global, local, and type names.
  
 ## Recommended part
 * We recommend to use fully expanded keyword or function name in lower case or capitalized. Whatever you'll select should be consistent across class or utility, i.e.
@@ -63,4 +64,3 @@ If (expression) {
   set j  = k + 1
   set iN = jN \ l
 ```
-* Please "internationalize" your code - write comments in English, and name globals, locals, or types accordigly. 
