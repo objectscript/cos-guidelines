@@ -60,11 +60,12 @@ Set obj = ##class(Person).%New(initexpresion)
         }
     }
 ```
-* For better readablity please insert spaces after comma in argument list, i.e.
+* For better readablity please insert spaces after comma in functions/methods argument list, i.e.
 ```
   Write 1, 2, 3
   Do ..Method(arg1, arg2, argN)
 ```
+For obvious reasons this recommendation not applies to arcguments in `$$$macro`-call, where such extra spaces will break final result.
 * For better readability please insert spaces around assignment. You may align several neighbour assignments according to your tastes, i.e.
 ```
   #dim index As %Integer = 0
