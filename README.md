@@ -35,11 +35,11 @@ If (expression) {
 ```
 * We recommend to use fully qualified package name of a class (except `%Library` package)
 ```
-Set obj = do ##class(Sample.Person).%New(initexpresion)
+Set obj = ##class(Sample.Person).%New(initexpresion)
 ```
 instead of
 ```
-Set obj = do ##class(Person).%New(initexpresion)
+Set obj = ##class(Person).%New(initexpresion)
 ```
 * In general, use the reasonable name convention consistently across whole hierarchy. We recommend to use CamelCase for classes, methods and properties (e.g. `Sample.Person`, `OpenFile`, `LastIndex`, etc.), but smallCamelCase for local variables (e.g. `startDate`, `endDate`), but please be consistent and use local schema if it's different than current recommendation.
 * We recommend to use `#dim` statement for declaration of local variables types, e.g.
