@@ -11,7 +11,7 @@ but which will be introducing some unnecessary inconsistency.
 
 * Only "modern" syntax permitted, dotted syntax is not generally allowed (with few exceptions);
 * No short name for statements keywords or built-in functions allowed - use fully expanded names;
-* Comment your code appropriately, use English in comments to make your code easy to understand by your international collegues. Same English-based rule applies to global, local, and type names.
+* Comment your code appropriately, use English in comments to make your code easy to understand by your international colleagues. Same English-based rule applies to global, local, and type names.
  
 ## Recommended part
 * We recommend to use fully expanded keyword or function name in lower case or capitalized. Whatever you'll select should be consistent across class or utility, i.e.
@@ -48,7 +48,7 @@ Set obj = ##class(Person).%New(initexpresion)
   do array.SetAt(id, "id")
   #dim status As %Status = $$$OK
 ```
- This will help editor to provide better auto-complete, and eventually will be used by static checker for type informantion extraction.
+ This will help editor to provide better auto-complete, and eventually will be used by static checker for type information extraction.
 * Please indent blocks reasonably. We recommend to use 8, 4 or 2 spaces indentations. Pick your level, and apply consistently.
 ```
     if (expression) {
@@ -60,7 +60,7 @@ Set obj = ##class(Person).%New(initexpresion)
         }
     }
 ```
-* For better readablity please insert spaces after comma in functions/methods argument list, i.e.
+* For better readability please insert spaces after comma in functions/methods argument list, i.e.
 ```
   Write 1, 2, 3
   Do ..Method(arg1, arg2, argN)
