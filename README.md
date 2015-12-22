@@ -7,6 +7,10 @@ If there is some style already established in the class or utility being modifie
 to continue use that same style, than introducing yet another one, which may be more recommended 
 but which will be introducing some unnecessary inconsistency.
 
+## Cheat sheet
+
+For COS cheat sheet refer [here](CHEAT.md).
+
 ## Mandatory part
 
 * Only "modern" syntax permitted, dotted syntax is not generally allowed (with few exceptions);
