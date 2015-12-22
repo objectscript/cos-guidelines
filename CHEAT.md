@@ -129,6 +129,7 @@ Some most encountered COS expressions
 |----------------------------------|-----------------------------------------|
 | Return a good status             | Quit $$$OK                              |
 | Return an error status           | Quit $$$ERROR($$$GeneralError, message) |
+| Throw exception on error         | $$$ThrowOnError(status, code) or $$$TOE(status, code) |
 | Check If status is good          | If $$$ISOK(status)                      |
 | Check If status is an error      | If $$$ISERR(status)                     |
 | Return a null object reference   | Quit $$$NULLOREF                        |
