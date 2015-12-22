@@ -55,7 +55,7 @@ Some most encountered COS expressions
 | Date conversion (external → internal)            | `Set variable = $zdh("mm/dd/yyyy")`                         | 
 | Date conversion (internal → external)            | `Set variable = $zd(internalDate, format)`                  | 
 | Time conversion (external → internal)            | `Set variable = $zth("hh:mm:ss")`                           | 
-| Time conversion (internal → external)            | `Set variable = $zt(internalTime, format)'                  | 
+| Time conversion (internal → external)            | `Set variable = $zt(internalTime, format)`                  | 
 | Display current internal date/time string        | `Write $horolog`                                            | 
 | Display UTC date/time string                     | `Write $ztimestamp`                                         | 
 | Display length of a string                       | `Write $length(string)`                                     | 
