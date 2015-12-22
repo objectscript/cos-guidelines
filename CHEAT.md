@@ -14,7 +14,7 @@ Some most encountered COS expressions
 | Retrieve the OID of a saved object           | `Set oid = object.%Oid()`                                                         |
 | Validate an object without saving            | `Set status = object.%ValidateObject()`                                           |
 | Validate a property without saving           | `Set status = ##class(package.class).PropertyIsValid(object.Property)`            |
-| Print status after error                     | `Do $system.Status.DisplayError(status)`<br>`ZWrite status` (v2012.2+)            |
+| Print status after error                     | `Do $system.Status.DisplayError(status)`<br>`Zwrite status` (v2012.2+)            |
 | Obtain status details after error            | `Do $system.Status.DecomposeStatus(status, .err)`                                 |
 | Remove an object from process memory         | `Set object = ""`                                                                 |
 | Delete an existing object of a class         | `Set status = ##class(package.class).%DeleteId(id)`                               |
