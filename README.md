@@ -9,7 +9,7 @@ but which will be introducing some unnecessary inconsistency.
 
 ## Cheat sheet
 
-For COS cheat sheet refer [here](CHEAT.md).
+For COS cheat sheet refer [here](COSQuickRef.md).
 
 ## Mandatory part
 
