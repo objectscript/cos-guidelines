@@ -1,4 +1,5 @@
-# cos-guidelines
+# Caché ObjectScript (COS) Code Guidelines
+
 This is the first approximation of Caché ObjectScript (COS) guidelines we use for github.com/intersystems-ru projects. There are mandatory and recommended parts.
 
 We do not plan to be very restrictive, but want be rather flexible enough and allow any *reasonable* style.
@@ -7,17 +8,17 @@ If there is some style already established in the class or utility being modifie
 to continue use that same style, than introducing yet another one, which may be more recommended 
 but which will be introducing some unnecessary inconsistency.
 
-## Cheat sheet
+## Quick Reference Guide
 
-For COS cheat sheet refer [here](COSQuickRef.md).
+For Caché ObjectScript quick reference guide see [here](COSQuickRef.md).
 
-## Mandatory part
+## Mandatory Part
 
 * Only "modern" syntax permitted, dotted syntax is not generally allowed (with few exceptions);
 * No short name for statements keywords or built-in functions allowed - use fully expanded names;
 * Comment your code appropriately, use English in comments to make your code easy to understand by your international colleagues. Same English-based rule applies to global, local, and type names.
  
-## Recommended part
+## Recommended Part
 * We recommend to use fully expanded keyword or function name in lower case or capitalized. Whatever you'll select should be consistent across class or utility, i.e.
 ```
 If (expression) {

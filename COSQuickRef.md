@@ -17,7 +17,7 @@ A list of some common ObjectScript expressions
 | Determine if an object was modified          | `Set variable = object.%IsModified()`                                             |
 | Validate an object without saving            | `Set status = object.%ValidateObject()`                                           |
 | Validate a property without saving           | `Set status = ##class(package.class).PropertyIsValid(object.Property)`            |
-| Print status after error                     | `Do $system.Status.DisplayError(status)`<br>`Zwrite status` (v2012.2+)            |
+| Print status after error                     | `Do $system.Status.DisplayError(status)`<br>`Write $system.Status.GetErrorText(status)` |
 | Obtain status details after error            | `Do $system.Status.DecomposeStatus(status, .err)`                                 |
 | Remove an object from process memory         | `Set object = ""`                                                                 |
 | Delete an existing object of a class         | `Set status = ##class(package.class).%DeleteId(id)`                               |
