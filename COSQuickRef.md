@@ -100,11 +100,11 @@ A list of some common ObjectScript expressions
 
 ## Additional ObjectScript Functions
 
-| Action                                           | Code                                                        |
-|--------------------------------------------------|-------------------------------------------------------------|
-| Increment ^global by increment                   | `$increment(^global, increment)` <br> `$sequence(^global, increment)` |
-| Match a regular expression                       | `Set matches = $match(string, regularexpression)`         |
-| Display random integer from start to start+count | `Write $random(count) + start`                              |
+| Action                                           | Code                                                                |
+|--------------------------------------------------|---------------------------------------------------------------------|
+| Increment ^global by increment                   | `$increment(^global, increment)`<br>`$sequence(^global, increment)` |
+| Match a regular expression                       | `Set matches = $match(string, regularexpression)`                   |
+| Display random integer from start to start+count | `Write $random(count) + start`                                      |
 
 ## ObjectScript Special Variables
 
