@@ -9,10 +9,11 @@ A list of some common ObjectScript expressions
 | Call an instance method                      | `Do object.method(arguments)`<br>`Set variable = object.method(arguments)`<br>Note: place a . before each pass-by-reference argument |
 | Create a new object                          | `Set object = ##class(package.class).%New()`                                      |
 | Open an existing object                      | `Set object = ##class(package.class).%OpenId(id, concurrency, .status)`           |
-| Open an existing object by unique index value | `Set object = ##class(package.class).IndexNameOpen(value, concurrency, .status)` |
+| Open an existing object by unique index value| `Set object = ##class(package.class).IndexNameOpen(value, concurrency, .status)`  |
 | Save an object                               | `Set status = object.%Save()`                                                     |
 | Retrieve the ID of a saved object            | `Set id = object.%Id()`                                                           |
 | Retrieve the OID of a saved object           | `Set oid = object.%Oid()`                                                         |
+| Retrieve property of a saved object          | `Set variable = ##class(package.class).GetStoredPropertyName(id)`                     |
 | Determine if an object was modified          | `Set variable = object.%IsModified()`                                             |
 | Validate an object without saving            | `Set status = object.%ValidateObject()`                                           |
 | Validate a property without saving           | `Set status = ##class(package.class).PropertyIsValid(object.Property)`            |
@@ -36,7 +37,7 @@ A list of some common ObjectScript expressions
 | Find classname of an object                  | `Write $classname(oref)`                                                          |
 | Start the SQL shell                          | `Do $system.SQL.Shell()`                                                          |
 | Test a class query                           | `Do ##class(%ResultSet).RunQuery(class, query)`                                   |
-| Declare a variable's type for Studio Assist | `#dim object as package.class`                                                     |
+| Declare a variable's type for Studio Assist  | `#dim object as package.class`                                                    |
 
 ## ObjectScript Commands
 
