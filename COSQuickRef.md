@@ -13,7 +13,7 @@ A list of some common ObjectScript expressions
 | Save an object                               | `Set status = object.%Save()`                                                     |
 | Retrieve the ID of a saved object            | `Set id = object.%Id()`                                                           |
 | Retrieve the OID of a saved object           | `Set oid = object.%Oid()`                                                         |
-| Retrieve property of a saved object          | `Set variable = ##class(package.class).GetStoredProperty(id)`                     |
+| Retrieve property of a saved object          | `Set variable = ##class(package.class).GetStoredPropertyName(id)`                     |
 | Determine if an object was modified          | `Set variable = object.%IsModified()`                                             |
 | Validate an object without saving            | `Set status = object.%ValidateObject()`                                           |
 | Validate a property without saving           | `Set status = ##class(package.class).PropertyIsValid(object.Property)`            |
