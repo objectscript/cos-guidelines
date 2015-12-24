@@ -1,7 +1,7 @@
 # Caché ObjectScript Quick Reference
 A list of some common ObjectScript expressions
 
-## Object/SQL Basics  
+## Object/SQL Basics 
 
 |      Action                                  |   Code                                                                            |
 |----------------------------------------------|-----------------------------------------------------------------------------------|
@@ -38,7 +38,7 @@ A list of some common ObjectScript expressions
 | Test a class query                           | `Do ##class(%ResultSet).RunQuery(class, query)`                                   |
 | Declare a variable's type for Studio Assist | `#dim object as package.class`                                                     |
 
-## ObjectScript Commands 
+## ObjectScript Commands
 
 | Command                       | Description                                                                         |
 |-------------------------------|-------------------------------------------------------------------------------------|
@@ -56,70 +56,70 @@ A list of some common ObjectScript expressions
 
 ## ObjectScript Date/Time Functions and Special Variables
 
-| Action                                           | Code                                                        | 
-|--------------------------------------------------|-------------------------------------------------------------| 
-| Date conversion (external → internal)            | `Set variable = $zdh("mm/dd/yyyy")`                         | 
-| Date conversion (internal → external)            | `Set variable = $zd(internalDate, format)`                  | 
-| Time conversion (external → internal)            | `Set variable = $zth("hh:mm:ss")`                           | 
-| Time conversion (internal → external)            | `Set variable = $zt(internalTime, format)`                  | 
-| Display current internal date/time string        | `Write $horolog`                                            | 
-| Display UTC date/time string                     | `Write $ztimestamp`                                         | 
+| Action                                           | Code                                                        |
+|--------------------------------------------------|-------------------------------------------------------------|
+| Date conversion (external → internal)            | `Set variable = $zdh("mm/dd/yyyy")`                         |
+| Date conversion (internal → external)            | `Set variable = $zd(internalDate, format)`                  |
+| Time conversion (external → internal)            | `Set variable = $zth("hh:mm:ss")`                           |
+| Time conversion (internal → external)            | `Set variable = $zt(internalTime, format)`                  |
+| Display current internal date/time string        | `Write $horolog`                                            |
+| Display UTC date/time string                     | `Write $ztimestamp`                                         |
 
 ## ObjectScript Branching Functions
 
-| Action                                           | Code                                                                   | 
-|--------------------------------------------------|------------------------------------------------------------------------| 
-| Display result for value of expression           | `Write $case(expression, value1:result1, value2:result2, …, :resultN)` | 
-| Display result for first true condition          | `Write $select(condition1:result1, condition2:result2, …, 1:resultN)`  | 
+| Action                                           | Code                                                                   |
+|--------------------------------------------------|------------------------------------------------------------------------|
+| Display result for value of expression           | `Write $case(expression, value1:result1, value2:result2, …, :resultN)` |
+| Display result for first true condition          | `Write $select(condition1:result1, condition2:result2, …, 1:resultN)`  |
 
 ## ObjectScript String Functions
 
-| Action                                                   | Code                                                          | 
-|----------------------------------------------------------|---------------------------------------------------------------| 
-| Display substring extracted from string                  | `Write $extract(string, start, end)`                          | 
+| Action                                                   | Code                                                          |
+|----------------------------------------------------------|---------------------------------------------------------------|
+| Display substring extracted from string                  | `Write $extract(string, start, end)`                          |
 | Display right-justified string within width characters   | `Write $justify(string, width)`                               |
 | Display length of string                                 | `Write $length(string)`                                       |
-| Display number of delimited pieces in string             | `Write $length(string, delimiter)`                            | 
+| Display number of delimited pieces in string             | `Write $length(string, delimiter)`                            |
 | Display piece from delimited string                      | `Write $piece(string, delimiter, pieceNumber)`                |
 | Set piece into delimited string                          | `Set $piece(string, delimiter, pieceNumber) = piece`          |
 | Display string after replacing substring                 | `Write $replace(string, subString, replaceString)`            |
 | Display reversed string                                  | `Write $reverse(string)`                                      |
 | Display string after replacing characters                | `Write $translate(string, searchChars, replaceChars)`         |
-| Build a list                                             | `Set listString = $listbuild(list items, separated by comma)` | 
-| Retrieve an item from a list                             | `Set variable = $list(listString, position)`                  | 
+| Build a list                                             | `Set listString = $listbuild(list items, separated by comma)` |
+| Retrieve an item from a list                             | `Set variable = $list(listString, position)`                  |
 | Put item into list string                                | `Set $list(listString, position) = substring`                 |
-| Display the length of a list                             | `Write $listlength(listString)`                               | 
+| Display the length of a list                             | `Write $listlength(listString)`                               |
 
 ## ObjectScript Existence Functions
 
-| Action                                           | Code                                                        | 
-|--------------------------------------------------|-------------------------------------------------------------| 
-| Check if variable exists                              | `Write $data(variable)`                                | 
-| Return value of variable, or default If undefined     | `Write $get(variable, default)`                        | 
+| Action                                           | Code                                                        |
+|--------------------------------------------------|-------------------------------------------------------------|
+| Check if variable exists                              | `Write $data(variable)`                                |
+| Return value of variable, or default If undefined     | `Write $get(variable, default)`                        |
 | Return next valid subscript in array                  | `Write $order(array(subscript))`                       |
 
 ## Additional ObjectScript Functions
 
-| Action                                           | Code                                                        | 
-|--------------------------------------------------|-------------------------------------------------------------| 
+| Action                                           | Code                                                        |
+|--------------------------------------------------|-------------------------------------------------------------|
 | Increment ^global by increment                   | `$increment(^global, increment)` <br> `$sequence(^global, increment)` |
 | Match a regular expression                       | `Set matches = $match(string, regularexpression)`         |
-| Display random integer from start to start+count | `Write $random(count) + start`                              | 
+| Display random integer from start to start+count | `Write $random(count) + start`                              |
 
 ## ObjectScript Special Variables
 
-| Action                            | Code                                  | 
-|-----------------------------------|---------------------------------------| 
+| Action                            | Code                                  |
+|-----------------------------------|---------------------------------------|
 | Display process ID                | `Write $job`                          |
 | Display current namespace         | `Write $namespace`                    |
-| Change current namespace          | `Set $namespace = newnamespace`       | 
+| Change current namespace          | `Set $namespace = newnamespace`       |
 | Display username                  | `Write $username`                     |
 | Display roles                     | `Write $roles`                        |
 
 ## Utilities
 
-| Action                            | Code                                  | 
-|-----------------------------------|---------------------------------------| 
+| Action                            | Code                                  |
+|-----------------------------------|---------------------------------------|
 | Change current namespace          | `Do ^%CD` <br> `zn "newnamespace"`    |
 | Display a ^global                 | `Do ^%G` <br> `zwrite ^global`        |
 
