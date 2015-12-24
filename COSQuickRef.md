@@ -83,8 +83,8 @@ A list of some common ObjectScript expressions
 | Display piece from delimited string                      | `Write $piece(string, delimiter, pieceNumber)`                |
 | Set piece into delimited string                          | `Set $piece(string, delimiter, pieceNumber) = piece`          |
 | Display string after replacing substring                 | `Write $replace(string, subString, replaceString)`            |
-| Display reversed string                                  | `Write	$reverse(string)`                                      |
-| Display string after replacing characters                | `Write	$translate(string, searchChars, replaceChars)`         |
+| Display reversed string                                  | `Write $reverse(string)`                                      |
+| Display string after replacing characters                | `Write $translate(string, searchChars, replaceChars)`         |
 | Build a list                                             | `Set listString = $listbuild(list items, separated by comma)` | 
 | Retrieve an item from a list                             | `Set variable = $list(listString, position)`                  | 
 | Put item into list string                                | `Set $list(listString, position) = substring`                 |
@@ -111,7 +111,7 @@ A list of some common ObjectScript expressions
 | Action                            | Code                                  | 
 |-----------------------------------|---------------------------------------| 
 | Display process ID                | `Write $job`                          |
-| Display current namespace	        | `Write $namespace`                    |
+| Display current namespace         | `Write $namespace`                    |
 | Change current namespace          | `Set $namespace = newnamespace`       | 
 | Display username                  | `Write $username`                     |
 | Display roles                     | `Write $roles`                        |
