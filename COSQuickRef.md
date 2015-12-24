@@ -76,12 +76,12 @@ A list of some common ObjectScript expressions
 
 | Action                                                   | Code                                                          | 
 |----------------------------------------------------------|---------------------------------------------------------------| 
-| Display substring extracted from string	               | `Write $extract(string, start, end)`                          | 
+| Display substring extracted from string                  | `Write $extract(string, start, end)`                          | 
 | Display right-justified string within width characters   | `Write $justify(string, width)`                               |
 | Display length of string                                 | `Write $length(string)`                                       |
 | Display number of delimited pieces in string             | `Write $length(string, delimiter)`                            | 
 | Display piece from delimited string                      | `Write $piece(string, delimiter, pieceNumber)`                |
-| Set piece into delimited string	                       | `Set $piece(string, delimiter, pieceNumber) = piece`          |
+| Set piece into delimited string                          | `Set $piece(string, delimiter, pieceNumber) = piece`          |
 | Display string after replacing substring                 | `Write $replace(string, subString, replaceString)`            |
 | Display reversed string                                  | `Write	$reverse(string)`                                      |
 | Display string after replacing characters                | `Write	$translate(string, searchChars, replaceChars)`         |
@@ -103,7 +103,7 @@ A list of some common ObjectScript expressions
 | Action                                           | Code                                                        | 
 |--------------------------------------------------|-------------------------------------------------------------| 
 | Increment ^global by increment                   | `$increment(^global, increment)` <br> `$sequence(^global, increment)` |
-| Match a regular expression	                     | `Set matches = $match(string, regularexpression)`         |
+| Match a regular expression                       | `Set matches = $match(string, regularexpression)`         |
 | Display random integer from start to start+count | `Write $random(count) + start`                              | 
 
 ## ObjectScript Special Variables
