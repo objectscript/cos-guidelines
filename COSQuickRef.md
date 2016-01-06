@@ -59,14 +59,14 @@ A list of some common ObjectScript expressions
 
 | Action                                           | Code                                                        |
 |--------------------------------------------------|-------------------------------------------------------------|
-| Date conversion (external → internal)                | `Set variable = $zdh("mm/dd/yyyy")`                                                           |
-| Date conversion (internal → external)                | `Set variable = $zd(internalDate, format)`                                                    |
-| Time conversion (external → internal)                | `Set variable = $zth("hh:mm:ss")`                                                             |
-| Time conversion (internal → external)                | `Set variable = $zt(internalTime, format)`                                                    |
-| Display current internal date/time string            | `Write $horolog`                                                                              |
-| Display UTC date/time string                         | `Write $ztimestamp`                                                                           |
-| Get the date relative to other date (any type)       | `write $system.SQL.DATEADD("hh", -4, "2015-08-10 19:32:45")`<br>Results `2015-08-10 15:32:45` |
-| Get the difference between two dates (any type)      | `$system.SQL.DATEDIFF("hh", "63774", "63775,12441")`<br>Results `27`                          |
+| Date conversion (external → internal)                | `Set variable = $zdh("mm/dd/yyyy")`                     |
+| Date conversion (internal → external)                | `Set variable = $zd(internalDate, format)`              |
+| Time conversion (external → internal)                | `Set variable = $zth("hh:mm:ss")`                       |
+| Time conversion (internal → external)                | `Set variable = $zt(internalTime, format)`              |
+| Display current internal date/time string            | `Write $horolog`                                        |
+| Display UTC date/time string                         | `Write $ztimestamp`                                     |
+| Get the date relative to other date (any type)       | `Write $system.SQL.DATEADD("hh", -4, "yyyy-mm-dd hh:mm:ss")` |
+| Get the difference between two dates (any type)      | `Write $system.SQL.DATEDIFF("hh", horolog-or-ztimestamp, horolog-or-ztimestamp)`|
 
 ## ObjectScript Branching Functions
 
