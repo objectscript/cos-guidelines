@@ -1,7 +1,7 @@
 # Caché ObjectScript Quick Reference
 A list of some common ObjectScript expressions
 
-## Object/SQL Basics 
+## Object/SQL Basics
 
 |      Action                                  |   Code                                                                            |
 |----------------------------------------------|-----------------------------------------------------------------------------------|
@@ -92,6 +92,8 @@ A list of some common ObjectScript expressions
 | Retrieve an item from a list                             | `Set variable = $list(listString, position)`                  |
 | Put item into list string                                | `Set $list(listString, position) = substring`                 |
 | Display the length of a list                             | `Write $listlength(listString)`                               |
+| Search a value in a list                                 | `Write $listfind(listString, value)`                          |
+| Build a list from a string                               | `Set listString = $listFromString(string, delimiter)`         |
 
 ## ObjectScript Existence Functions
 
