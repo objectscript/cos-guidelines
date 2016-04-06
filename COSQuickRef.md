@@ -108,7 +108,7 @@ A list of some common ObjectScript expressions
 
 | Action                                           | Code                                                                |
 |--------------------------------------------------|---------------------------------------------------------------------|
-| Increment ^global by increment                   | `$increment(^global, increment)`<br>`$sequence(^global, increment)` |
+| Increment ^global by increment                   | `$increment(^global, increment)`<br>`$sequence(^global)` |
 | Match a regular expression                       | `Set matches = $match(string, regularexpression)`                   |
 | Display random integer from start to start+count | `Write $random(count) + start`                                      |
 
