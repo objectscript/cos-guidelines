@@ -78,3 +78,6 @@ For obvious reasons this recommendation not applies to arguments in `$$$macro`-c
   set j  = k + 1
   set iN = jN \ l
 ```
+
+## Related discussion
+[Standards document for Objectscript developers](https://community.intersystems.com/post/standards-document-objectscript-developers)
