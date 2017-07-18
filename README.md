@@ -1,6 +1,6 @@
-# Caché ObjectScript (COS) Code Guidelines
+# Caché ObjectScript Code Guidelines
 
-This is the first approximation of Caché ObjectScript (COS) guidelines we use for github.com/intersystems-ru projects. There are mandatory and recommended parts.
+This is the first approximation of Caché ObjectScript guidelines we use for github.com/intersystems-ru projects. There are mandatory and recommended parts.
 
 We do not plan to be very restrictive, but want be rather flexible enough and allow any *reasonable* style.
 Here is the general advice: use common sense and try to *be consistent* wherever you write code. 
